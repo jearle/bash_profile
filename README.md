@@ -1,3 +1,3 @@
 # Jesse's Bash Profile 
 
-## A bash profile for darker terminals
+A simple bash profile geared towards Sublime Text 2 users on a Mac.
