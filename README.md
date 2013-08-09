@@ -1,4 +1,4 @@
-bash_profile
+Jesse's Bash Profile
 ============
 
 My bash profile
