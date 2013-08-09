@@ -1,4 +1,4 @@
 Jesse's Bash Profile
 ============
 
-# My bash profile
+## A bash profile for darker terminals
