@@ -1,2 +1,21 @@
-#!/usr/env/bin bash
+#!/usr/bin/env bash
 
+JESSE_FOLDER=~/.jesse_bash_profile/
+BASH_PROFILE=".bash_profile"
+GIT_COMPLETION=".git-completion.bash"
+GIT_PROMPT=".git-prompt.sh"
+
+function jesse_source {
+	mkdir -p ${JESSE_FOLDER}
+	cp ./${BASH_PROFILE} ${JESSE_FOLDER}${BASH_PROFILE}
+	cp ./${GIT_COMPLETION} ${JESSE_FOLDER}${GIT_COMPLETION}
+	cp ./${GIT_PROMPT} ${JESSE_FOLDER}${GIT_PROMPT}
+}
+
+jesse_source
+
+echo "source ${JESSE_FOLDER}${GIT_COMPLETION}" >> ~/${BASH_PROFILE}
+echo "source ${JESSE_FOLDER}${GIT_PROMPT}" >> ~/${BASH_PROFILE}
+echo "source ${JESSE_FOLDER}${BASH_PROFILE}" >> ~/${BASH_PROFILE}
+
+source ~/${BASH_PROFILE}

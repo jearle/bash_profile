@@ -1,8 +1,3 @@
-shopt -s checkwinsize
-
-source /Users/jesseearle/bash_profile/.git-completion.bash
-source /Users/jesseearle/bash_profile/.git-prompt.sh
-
 # git-prompt vars
 GIT_PS1_SHOWDIRTYSTATE=1
 
@@ -32,24 +27,9 @@ MY_SHELL=" ${BRED}\$(echo -e \"\xe2\x99\xa1\") \$(echo -e \"\xe2\x99\xa1\") \$(e
 # My PS1
 PS1="\n${MY_GIT_BRANCH}\n${MY_TIME}\n${MY_PATH}\n${MY_SHELL}"
 
-
-# Bash completion
-if [ -f /etc/bash_completion ]; then
-  . /etc/bash_completion
-fi
-
-# Locale and editor
-export EDITOR=nano
-
-PATH=/usr/local/bin:$PATH:/usr/local/share/npm/bin
-
-### Added by the Heroku Toolbelt
-export PATH="/usr/local/heroku/bin:$PATH"
-
 ### Aliases
 alias obp="/Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl -n /Users/jesseearle/.bash_profile && source ~/.bash_profile"
 alias ost="/Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl -n"
 alias sbp="source ~/.bash_profile"
 alias gcj="cd ~/Dropbox/clients/shopbeam/spock/ && git checkout jesse"
 alias gcm="git checkout master"
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
