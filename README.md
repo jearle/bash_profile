@@ -10,3 +10,6 @@ $ cd ./bash_profile
 $ ./install
 ```
 
+The install script adds a hidden folder to your home path called .jesse_bash_profile.
+It then copies .bash_profile, .git-completion.bash, and .git-prompt.sh into 
+~/.jesse_bash_profile .
