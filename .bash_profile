@@ -17,6 +17,7 @@ NORMAL='\[\033[00m\]'
 
 # Symbols
 HEART="\xe2\x99\xa1"
+BURGER="\xf0\x9F\x8d\x94"
 
 # Formats
 DATE=`date +"%m/%d/%Y |%l:%M%p"`
