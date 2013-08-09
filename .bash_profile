@@ -20,16 +20,17 @@ HEART="\xe2\x99\xa1"
 BURGER="\xf0\x9F\x8d\x94"
 CHERRY="\xF0\x9F\x8D\x92"
 POODLE="\xF0\x9F\x90\xA9"
+POOP="\xf0\x9f\x92\xa9"
 
 # Formats
 DATE=`date +"%m/%d/%Y |%l:%M%p"`
 
 # My Formats
-MY_PROMPT=$BURGER
-MY_GIT_BRANCH="${YELLOW}branch:${GRAY}\$(__git_ps1)"
-MY_TIME="  ${YELLOW}time: ${GRAY}${DATE}"
-MY_PATH="  ${YELLOW}path: ${LBLUE}\w"
-MY_SHELL=" ${BRED}\$(echo -e \"${MY_PROMPT}\") \$(echo -e \"${MY_PROMPT}\") \$(echo -e \"${MY_PROMPT}\") ${NORMAL} "
+MY_PROMPT=$POOP
+MY_GIT_BRANCH=" $(echo -e ${POODLE}) $(echo -e ${POODLE}) $(echo -e ${POODLE}) ${GRAY}\$(__git_ps1)"
+MY_TIME=" $(echo -e ${CHERRY}) $(echo -e ${CHERRY}) $(echo -e ${CHERRY}) ${GRAY} ${DATE}"
+MY_PATH=" $(echo -e ${BURGER}) $(echo -e ${BURGER}) $(echo -e ${BURGER}) ${LBLUE} \w"
+MY_SHELL=" \$(echo -e \"${MY_PROMPT}\") \$(echo -e \"${MY_PROMPT}\") \$(echo -e \"${MY_PROMPT}\") ${NORMAL} "
 
 # My PS1
 PS1="\n${MY_GIT_BRANCH}\n${MY_TIME}\n${MY_PATH}\n${MY_SHELL}"
