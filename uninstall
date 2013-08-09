@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+
+JESSE_FOLDER=.jesse_bash_profile
+
+sed -i ".bak" '/.jesse_bash_profile/d' ~/.bash_profile
+rm ~/.bash_profile.bak
+
+sed -i ".bak" '/Added by Jesse/d' ~/.bash_profile
+rm ~/.bash_profile.bak
+
+rm -r ${JESSE_FOLDER}

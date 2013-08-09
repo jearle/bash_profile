@@ -15,6 +15,9 @@ GRAY='\[\033[0;37m\]'
 TEST='\[\033[9;34m\]'
 NORMAL='\[\033[00m\]'
 
+# Symbols
+HEART="\xe2\x99\xa1"
+
 # Formats
 DATE=`date +"%m/%d/%Y |%l:%M%p"`
 
@@ -22,14 +25,13 @@ DATE=`date +"%m/%d/%Y |%l:%M%p"`
 MY_GIT_BRANCH="${YELLOW}branch:${GRAY}\$(__git_ps1)"
 MY_TIME="  ${YELLOW}time: ${GRAY}${DATE}"
 MY_PATH="  ${YELLOW}path: ${LBLUE}\w"
-MY_SHELL=" ${BRED}\$(echo -e \"\xe2\x99\xa1\") \$(echo -e \"\xe2\x99\xa1\") \$(echo -e \"\xe2\x99\xa1\") ${NORMAL} "
+MY_SHELL=" ${BRED}\$(echo -e \"${HEART}\") \$(echo -e \"${HEART}\") \$(echo -e \"${HEART}\") ${NORMAL} "
 
 # My PS1
 PS1="\n${MY_GIT_BRANCH}\n${MY_TIME}\n${MY_PATH}\n${MY_SHELL}"
 
 ### Aliases
-alias obp="/Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl -n /Users/jesseearle/.bash_profile && source ~/.bash_profile"
+alias obp="/Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl -n ~/.bash_profile"
 alias ost="/Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl -n"
 alias sbp="source ~/.bash_profile"
-alias gcj="cd ~/Dropbox/clients/shopbeam/spock/ && git checkout jesse"
 alias gcm="git checkout master"
