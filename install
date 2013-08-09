@@ -15,6 +15,9 @@ function jesse_source {
 jesse_source
 
 echo -e "\n"
+echo -e "\n"
+echo -e "# Added by Jesse's Bash Profile"
+echo -e "\n"
 echo "source ${JESSE_FOLDER}${GIT_COMPLETION}" >> ~/${BASH_PROFILE}
 echo "source ${JESSE_FOLDER}${GIT_PROMPT}" >> ~/${BASH_PROFILE}
 echo "source ${JESSE_FOLDER}${BASH_PROFILE}" >> ~/${BASH_PROFILE}
